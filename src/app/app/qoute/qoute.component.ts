@@ -13,7 +13,6 @@ export class QuoteComponent implements OnInit {
 
     new Quote(5, 'Pain', '“The more we diminish our own pain, or rank it compared to what others have survived, the less empathetic we are to everyone.”', '-Brene Brown', 'Michelle', new Date(2022, 2, 27), 0, 0),
 
-    // new Quote(3, 'Strenght', '“Out of suffering have emerged the strongest souls; the most massive characters are seared with scars.”', '-Westermann Volker', '-Milka Makanda>', new Date(2022, 1, 29), 0, 0),
 
     new Quote(4, 'Success', '“To succeed in life, you need two things: ignorance and confidence.”', '-Mark Twain', 'Michael Yotto', new Date(2022, 2, 11), 0, 0),
 
