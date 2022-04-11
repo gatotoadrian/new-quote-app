@@ -1,1 +1,40 @@
-<p>qoute works!</p>
+<div class="container">
+    <div id="welcome">
+        <h4>QOUTES ONLY.</h4>
+    </div>
+    <div class="row">
+        <div class="col" id="mycards">
+            <div *ngFor='let quote of quotes, let i = index;'>
+                <div class="card bg-light mb-3" style="max-width: 38rem;">
+                    <div class="card-header">
+                        <div class="row">
+                            <div id="col">
+                                <h5 id={{i}}>{{quote.quote}}</h5>
+                                Date Posted <span id="date_posted">{{ quote.postDate|dateCount }} Days </span>Ago.
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary" id="vote" (click)='toggleDetails(i)'>MORE</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title" appHighlight> {{quote.description }} </div>
+                        <div class="voter">
+                        </div>
+                        <div class="card-text" id="submitter">
+                            Posted By: ~ <span id="submittern"> {{ quote.submit_by }} </span> On:~ <span id="date_posted">
+                {{quote.postDate | date}} </span>
+                            <div id="author">
+                                <app-quote-detail *ngIf='quote.showDetails' [quote]='quote' (isSeen)='deleteQuote($event,i)'>
+                                </app-quote-detail>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="formquote">
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        </div>
+    </div>
+</div>
