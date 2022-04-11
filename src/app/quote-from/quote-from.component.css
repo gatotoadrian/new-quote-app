@@ -28,7 +28,6 @@
     pointer-events: none;
     content: "";
     position: absolute;
-    /* background: rgb(42, 173, 16); */
     top: 120;
     left: 0;
     width: 100%;
