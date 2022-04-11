@@ -48,8 +48,6 @@
     right: 0;
     /* box-shadow: 0 0 2em rgb(243, 10, 224); */
     opacity: 0;
-    background: rgb(16, 94, 173);
-    /* transition: opacity 100ms linear; */
     z-index: -1;
 }
 #addquote_btn:hover,
