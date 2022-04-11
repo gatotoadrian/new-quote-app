@@ -1,11 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
+import { Quote } from 'src/app/quote';
 
 @Component({
-  selector: 'app-qoute-details',
-  templateUrl: './qoute-details.component.html',
-  styleUrls: ['./qoute-details.component.css']
+  selector: 'app-quote-detail',
+  templateUrl: '././qoute-details.component.html',
+  styleUrls: ['././qoute-details.component.css']
 })
-export class QouteDetailsComponent implements OnInit {
+export class QuoteDetailComponent implements OnInit {
+  @Input() quote: Quote = new Quote(0, "", "", "", "", new Date, 0, 0);
+  @Output() isLike = new EventEmitter <boolean>();
+  @Output() isSeen = new EventEmitter<boolean>();
+
+  upVote(){
+    this.quote.likes+=1;
+  }
+
+  downVote () {
+    
+    this.quote.dislikes+=1;
+  }
+
+  quoteDelete (seen:boolean) {
+    this.isSeen.emit(seen);
+  }
 
   constructor() { }
 
