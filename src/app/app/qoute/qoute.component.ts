@@ -3,8 +3,9 @@ import { Quote } from 'src/app/quote';
 
 @Component({
   selector: 'app-quote',
-  templateUrl: './quote.component.html',
-  styleUrls: ['./quote.component.css']
+  templateUrl: '././qoute.component.html',
+  // templateUrl; './w'
+  styleUrls: ['./qoute.component.css']
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
