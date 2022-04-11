@@ -46,7 +46,6 @@
     top: 0;
     left: 0;
     right: 0;
-    /* box-shadow: 0 0 2em rgb(243, 10, 224); */
     opacity: 0;
     z-index: -1;
 }
