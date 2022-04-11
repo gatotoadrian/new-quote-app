@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+        .container {
+            /* background-image: url(https://www.pinterest.co.uk/pin/874190977642392775/n);} */
+            background-position: center center;
+            background-size: cover;
+            background-repeat: n/o-repeat;
+            background-attachment: fixed;
+            font-family: 'Noto' serif;
+            display: table;
+            
+        }
+        
+        #welcome {
+            color: rgb(45, 51, 39);
+            margin-bottom: 3%;
+            text-align: center;
+            padding-top: 30px;
+            text-shadow: 1px 1px rgb(188, 155, 155);
+        }
+        
+        h4 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        h5 {
+            color: rgb(78, 174, 215);
+            text-shadow: 2px;
+            text-decoration-line: underline;
+        }
+        
+        #mycards {
+            padding-left: opx
+            /* backgroung-color; blue: */
+        }
+        
+        #vote {
+            float: right;
+        }
+        
+        #submitter {
+            float: left;
+        }
+        
+        #submittern {
+            color: rgb(44, 208, 63);
+        }
+        
+        #date_posted {
+            color: rgb(229, 156, 30);
+        }
